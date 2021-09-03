@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch, useHistory} from "react-router-dom";
+import Homepage from "./Containers/Homepage/Homepage";
+import ThemeContextProvider from "./Context/ThemeContext";
+import Navbar from "./Components/Navbar/Navbar";
+import Articles from "./Components/Articles/Articles";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const history = useHistory();
+    return (
+    <>
+
+        <ThemeContextProvider>
+            <Navbar />
+            <Router>
+                <Switch>
+                    <Route path="/" exact component={Homepage}></Route>
+                    <Route path="/articles" exact component={Articles}></Route>
+                    <Route path="/contact" exact component={Contact}></Route>
+                    <Route path="/" component={() => <div>Erreur 404</div> }></Route>
+                </Switch>
+            </Router>
+        </ThemeContextProvider>
+    </>
+
+    );
 }
 
 export default App;
