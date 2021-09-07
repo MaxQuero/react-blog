@@ -1,0 +1,21 @@
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__add {
+    position: absolute;
+    right: 0;
+    top: 24px;
+    display: flex;
+    width: 48px;
+    height: 48px;
+  }
+
+  &__post {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+  }
+}

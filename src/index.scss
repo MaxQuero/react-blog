@@ -16,9 +16,33 @@ code {
 .lightmode--light {
   background: white;
   color: black;
+  border-color: black !important;
+
+  * {
+    color: black !important;
+  }
 }
 
 .lightmode--dark {
   background: black;
-  color: white;
+  color: white !important;
+  border-color: white !important;
+
+  * {
+    color: white !important;
+  }
+
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1024px;
+  margin: auto;
+}
+
+h1 {
+  width: 100%;
 }

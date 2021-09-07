@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.scss";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import LightMode from "../LightMode/LightMode";
+
 function Navbar() {
     return (
         <>
@@ -11,10 +13,13 @@ function Navbar() {
                 <NavLink exact to="/articles">
                     <li className="navbar__item">Articles</li>
                 </NavLink>
+                <NavLink exact to="/new-article">Ecrire</NavLink>
                 <NavLink exact to="/contact">
                     <li className="navbar__item">Contact</li>
                 </NavLink>
             </ul>
+
+            <LightMode />
         </>
     );
 }

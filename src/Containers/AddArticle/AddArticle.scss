@@ -1,0 +1,32 @@
+.add-article {
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    color: black !important;
+
+  }
+
+  &__submit {
+    color: black !important;
+    margin-top: 24px;
+    margin-left: 12px;
+  }
+}
+
+.form__item {
+  display: grid;
+  width: 100%;
+  label {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+    width: 250px;
+  }
+
+  input, textarea {
+    margin: 12px;
+    color: black !important;
+  }
+}

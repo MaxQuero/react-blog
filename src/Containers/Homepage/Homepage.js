@@ -1,11 +1,13 @@
 import React from "react";
-import Content from "../../Components/Content/Content";
 import Navbar from "../../Components/Navbar/Navbar";
+import Articles from "../Articles/Articles";
+import "./Homepage.scss";
 
 function Homepage() {
     return (
         <>
-            <Content />
+            <h1 className="homepage__title"> Bienvenue sur le blog !</h1>
+            <Articles />
         </>
     );
 }

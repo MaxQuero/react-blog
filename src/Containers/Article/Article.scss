@@ -1,0 +1,17 @@
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  &__title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__content {
+    width: 100%;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}

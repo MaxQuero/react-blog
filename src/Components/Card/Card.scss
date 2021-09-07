@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  text-align: center;
+  padding: 12px;
+
+  &__title {
+    width: 100%;
+    font-size: 16px;
+    color: black !important;
+    font-weight: bold;
+  }
+
+  &__content {
+    width: 100%;
+    font-size: 12px;
+    color: black !important;
+    font-weight: normal;
+  }
+}
