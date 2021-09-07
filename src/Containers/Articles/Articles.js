@@ -22,7 +22,6 @@ function Articles() {
     const goToDetails = (post) => {
 
         const news =  post.title.replace(/\s+/g, '-').trim();
-        console.log('coucodu', news);
         history.push(
             `/article/${post.title.replace(/\s+/g, '-').trim()}`,
             {
